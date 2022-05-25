@@ -1,16 +1,17 @@
 <div class="container">
     <div class="title">
-        Carrinho
+      <i class="fa-solid fa-cart-shopping"></i> Carrinho
     </div>
-    
+
     <div class="content">
         <div class="calc-shipping">
             <p>Calcular Frete:</p>
-            <input type="text" placeholder="Digite o CEP de entrega">
+            <input type="text" placeholder="Digite aqui o CEP de entrega">
         </div>
 
         <div class="products">
-            produto 1 
+            <app-product-card-cart></app-product-card-cart>
+            <app-product-card-cart></app-product-card-cart>
         </div>
 
         <div class="summary">
@@ -20,7 +21,7 @@
             </div>
             <div class="total amount">total <span>R$ 327,00</span></div>
         </div>
-        
+
         <button type="button">Finalizar compra</button>
-    </div>    
+    </div>
 </div>

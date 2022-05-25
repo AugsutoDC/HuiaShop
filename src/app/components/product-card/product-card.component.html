@@ -1,12 +1,19 @@
 <div class="content">
-  <img src="https://imgs.casasbahia.com.br/12879336/1xg.jpg?imwidth=500" alt="Produto imagem" />
+  <img [src]="product.img_url" alt="Imagem do produto" />
 
   <div class="info">
-    <p class="name">nome do produto</p>
-    <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+    <p class="name">{{ product.title }}</p>
+    <p class="description">{{ product.description }}</p>
     <div>
-      <span class="star">estrelas</span>
-      <span class="amount">R$ 204,00</span>
+      <span class="rating">
+        <ng-container *ngFor="let star of getNumberOfStarsChecked()">
+          <i class="fa-solid fa-star"></i>
+        </ng-container>
+        <ng-container *ngFor="let star of getNumberOfStars()">
+          <i class="fa-regular fa-star"></i>
+        </ng-container>
+      </span>
+      <span class="amount">{{ product.price | currency: 'BRL' }}</span>
     </div>
   </div>
 

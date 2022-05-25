@@ -12,6 +12,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductCardCartComponent } from './components/product-card-cart/product-card-cart.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HttpRequestInterceptor } from './interceptor/http-request-interceptor';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localePt, "pt");
 
@@ -27,7 +28,8 @@ registerLocaleData(localePt, "pt");
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [
     {

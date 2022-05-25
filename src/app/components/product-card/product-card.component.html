@@ -2,7 +2,7 @@
   <img [src]="product.img_url" alt="Imagem do produto" />
 
   <div class="info">
-    <p class="name">{{ product.title }}</p>
+    <app-product-title [title]="product.title"></app-product-title>
     <p class="description">{{ product.description }}</p>
     <div>
       <span class="rating">
@@ -17,7 +17,5 @@
     </div>
   </div>
 
-  <button type="button">
-    adicionar ao carrinho
-  </button>
+  <app-button [text]="'adicionar ao carrinho'" [color]="'#60A22D'"></app-button>
 </div>

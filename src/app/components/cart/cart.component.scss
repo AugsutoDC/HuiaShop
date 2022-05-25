@@ -122,29 +122,6 @@
         }
       }
     }
-
-    button {
-      border: 0;
-
-      width: 100%;
-      height: 50px;
-
-      background: #6b5995;
-      color: #ffffff;
-
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 22px;
-
-      cursor: pointer;
-
-      transition: filter 0.2s;
-
-      &:hover {
-        filter: brightness(0.8);
-      }
-    }
   }
 }
 

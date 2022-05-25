@@ -17,14 +17,8 @@
   .info {
     padding: 10px 5px 5px 10px;
 
-    h1 {
-      font-weight: 700;
-      font-size: 19px;
-      line-height: 28px;
-
-      color: #000000;
-
-      margin-top: 0;
+    ::ng-deep app-product-title h1 {
+      margin-bottom: 8px;
     }
 
     p {
